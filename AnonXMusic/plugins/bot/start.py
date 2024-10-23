@@ -32,7 +32,7 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_text("WELCOME")
+            await message.reply_text("Non ducor, duco.")
             return await message.reply_photo(
                 photo="https://telegra.ph/eyonn-10-23-2",
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -85,7 +85,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_text("hi")
+        await message.reply_text("Non ducor, duco.")
         await message.reply_photo(
             photo="https://telegra.ph/eyonn-10-23-2",
             caption=_["start_2"].format(message.from_user.mention, app.mention),
